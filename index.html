@@ -279,7 +279,7 @@
         </div></div>
         </div>
 
-        <form class="contact-form card reveal" style="--delay: .15s" data-to="sales@neuralnavigators.com">
+        <form class="contact-form card reveal" style="--delay: .15s" action="https://formspree.io/f/xbgdawag" method="POST">
           <h3>Send us a message</h3>
           <div class="field-row">
             <label class="field">Name <input name="name" autocomplete="name" required></label>
@@ -287,7 +287,10 @@
           </div>
           <label class="field">Subject <input name="subject"></label>
           <label class="field">Message <textarea name="message" rows="7" required></textarea></label>
+          <input type="hidden" name="_subject" value="New inquiry from neuralnavigators.com">
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
           <button class="btn btn--primary" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>

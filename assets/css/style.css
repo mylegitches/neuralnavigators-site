@@ -421,3 +421,10 @@ html:not(.js) .tabs { display: none; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* Contact form status + spam trap */
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.form-status { margin: 0; font-size: 0.95rem; color: var(--muted); min-height: 1.5em; }
+.form-status.is-success { color: #157a4a; font-weight: 500; }
+.form-status.is-error { color: #b3261e; font-weight: 500; }
+.contact-form .btn:disabled { opacity: 0.6; cursor: wait; transform: none; }

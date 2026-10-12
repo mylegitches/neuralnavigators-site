@@ -96,15 +96,29 @@ if (tabs.length) {
   tabs.forEach((t) => { document.getElementById(t.getAttribute('aria-controls')).hidden = t !== first; });
 }
 
-// Contact form: static hosting has no backend, so hand the message to the visitor's mail app.
+// Contact form: submitted to Formspree in the background so the visitor stays on the page.
 const form = document.querySelector('.contact-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  const status = form.querySelector('.form-status');
+  const button = form.querySelector('button[type="submit"]');
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const f = form.elements;
-    const body = `${f.message.value}\n\n${f.name.value}\n${f.email.value}`;
-    location.href = `mailto:${form.dataset.to}` +
-      `?subject=${encodeURIComponent(f.subject.value || 'Website inquiry')}` +
-      `&body=${encodeURIComponent(body)}`;
+    const data = new FormData(form);
+    if (data.get('subject')) data.set('_subject', `${data.get('subject')} (neuralnavigators.com)`);
+    button.disabled = true;
+    status.className = 'form-status';
+    status.textContent = 'Sending…';
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+      if (!res.ok) throw new Error(res.status);
+      form.reset();
+      status.classList.add('is-success');
+      status.textContent = 'Thanks! Your message was sent. We’ll respond within 12 business hours.';
+    } catch {
+      status.classList.add('is-error');
+      status.textContent = 'Sorry, something went wrong. Please email sales@neuralnavigators.com directly.';
+    } finally {
+      button.disabled = false;
+    }
   });
 }
