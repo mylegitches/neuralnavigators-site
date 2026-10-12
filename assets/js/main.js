@@ -12,16 +12,27 @@ toggle.addEventListener('click', () => setMenu(!document.body.classList.contains
 document.querySelectorAll('.site-header a[href^="#"]').forEach((a) => a.addEventListener('click', () => setMenu(false)));
 
 // Header shadow once scrolled; parallax layers drift slower than the page.
-const layers = [...document.querySelectorAll('[data-parallax]')];
+// Each layer is enlarged past its section by the furthest it can travel, so its edge never shows.
+const layers = [...document.querySelectorAll('[data-parallax]')].map((img) => ({
+  img, frame: img.parentElement, section: img.parentElement.parentElement, speed: parseFloat(img.dataset.parallax),
+}));
+function sizeLayers() {
+  const vh = window.innerHeight;
+  for (const layer of layers) {
+    // The section's center can sit at most (vh + height) / 2 from the viewport center while visible.
+    layer.max = reduceMotion ? 0 : Math.ceil(layer.speed * (vh + layer.section.offsetHeight) / 2) + 2;
+    layer.frame.style.inset = `-${layer.max}px 0`;
+  }
+}
 let ticking = false;
 function onScroll() {
   header.classList.toggle('is-scrolled', window.scrollY > 8);
   if (!reduceMotion) {
     const vh = window.innerHeight;
-    for (const img of layers) {
-      const box = img.parentElement.getBoundingClientRect();
+    for (const { img, section, speed, max } of layers) {
+      const box = section.getBoundingClientRect();
       if (box.bottom < 0 || box.top > vh) continue;
-      const offset = (box.top + box.height / 2 - vh / 2) * parseFloat(img.dataset.parallax);
+      const offset = Math.max(-max, Math.min(max, (box.top + box.height / 2 - vh / 2) * speed));
       img.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0)`;
     }
   }
@@ -30,7 +41,9 @@ function onScroll() {
 window.addEventListener('scroll', () => {
   if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
 }, { passive: true });
-window.addEventListener('resize', onScroll);
+window.addEventListener('resize', () => { sizeLayers(); onScroll(); });
+window.addEventListener('load', () => { sizeLayers(); onScroll(); });
+sizeLayers();
 onScroll();
 
 // Underline the nav link for the section currently in view.
