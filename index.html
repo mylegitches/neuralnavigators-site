@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Neural Navigators</title>
+  <title>Neural Navigators | AI Consulting in Houston</title>
   <meta name="description" content="Neural Navigators is a Houston AI consultancy helping businesses automate customer support, predict sales, and streamline marketing with AI.">
+  <meta name="theme-color" content="#070a14">
+  <meta property="og:title" content="Neural Navigators | AI Consulting in Houston">
+  <meta property="og:description" content="Neural Navigators is a Houston AI consultancy helping businesses automate customer support, predict sales, and streamline marketing with AI.">
+  <meta property="og:type" content="website">
   <link rel="icon" href="assets/img/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap">
+  <link rel="preload" as="image" href="assets/img/hero-network.jpg">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script type="speculationrules">{"prerender": [{"where": {"selector_matches": ".site-nav a, .btn"}, "eagerness": "moderate"}]}</script>
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -19,90 +24,310 @@
   <header class="site-header">
     <div class="container">
       <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
-      <a class="logo" href="./"><img src="assets/img/logo.png" alt="Neural Navigators" width="900" height="319"></a>
+      <a class="logo" href="#home"><img src="assets/img/logo.png" alt="Neural Navigators" width="900" height="319"></a>
       <nav class="site-nav" id="site-nav" aria-label="Main">
-        <a href="./" aria-current="page">Home</a>
-        <a href="about">About</a>
-        <a href="services">Services</a>
-        <a href="contactus">Contact Us</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="header-actions">
         <div class="social">
-          <a href="https://instagram.com/neuralnavigators" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://instagram.com/neuralnavigators" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
           <a href="https://www.linkedin.com/company/neural-navigators/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4.5" r="2.2"/><path d="M10 9h3.8v1.8c.6-1.1 2-2.1 4-2.1 3.3 0 4.2 2.1 4.2 5V21h-4v-6.3c0-1.5-.3-2.8-1.9-2.8-1.7 0-2.1 1.2-2.1 2.8V21h-4z"/></svg></a>
         </div>
-        <a class="btn btn--light" href="contactus">Book a consultation</a>
+        <a class="btn btn--primary btn--sm" href="#contact">Book a consultation</a>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero hero--home">
-      <div>
-        <h1 class="hero-eyebrow">Neural Navigators</h1>
-        <p class="hero-title">Charting Your Path To AI Success</p>
+    <!-- Home -->
+    <section class="hero" id="home">
+      <div class="parallax"><img data-parallax="0.35" src="assets/img/hero-network.jpg" alt="" width="1600" height="900" fetchpriority="high"></div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow reveal">Neural Navigators</p>
+          <h1 class="reveal" style="--delay: .1s">Charting Your Path To <span class="gradient-text">AI Success</span></h1>
+          <p class="reveal" style="--delay: .2s">AI consulting that helps businesses automate customer support, predict sales, and streamline marketing.</p>
+          <div class="hero-actions reveal" style="--delay: .3s">
+            <a class="btn btn--primary" href="#contact">Book a consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" href="#services">Explore services</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"></a>
+    </section>
+
+    <!-- About -->
+    <section class="section section--light" id="about">
+      <div class="container about">
+        <div class="about-media reveal">
+          <div class="parallax"><img data-parallax="0.15" src="assets/img/about-brain.jpg" alt="Illustration of a glowing circuit-board brain" width="1200" height="756" loading="lazy"></div>
+        </div>
+        <div>
+          <p class="eyebrow reveal">About us</p>
+          <h2 class="section-title section-title--left reveal">Who We Are</h2>
+          <p class="reveal" style="--delay: .1s">At <strong><em>Neural Navigators</em></strong>, we are an emerging team of AI consultants dedicated to helping businesses explore the transformative potential of artificial intelligence. While we are in the early stages of our journey, our passion for leveraging AI to create smarter, more efficient business solutions drives everything we do.</p>
+          <p class="reveal" style="--delay: .15s">We focus on key areas like automating customer support, predictive sales analytics, and marketing automation to deliver meaningful results for our clients. Our approach is rooted in collaboration and transparency, working closely with businesses to understand their unique needs and providing tailored AI solutions that align with their goals.</p>
+        </div>
+      </div>
+
+      <div class="container" style="margin-top: clamp(72px, 10vw, 120px)">
+        <div class="section-head reveal">
+          <p class="eyebrow">How we work</p>
+          <h2 class="section-title">Our Process</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <span class="step-num">01</span><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg></div>
+            <h3>Consultation</h3>
+            <p>At <strong><em>Neural Navigators</em></strong>, our AI consulting services empower businesses to harness the full potential of artificial intelligence. We work with you to identify key opportunities where AI can transform your operations. Whether you're looking to automate customer support, enhance sales forecasting, or streamline marketing strategies, our experts provide tailored advice to ensure you get the most out of your AI investments.</p>
+          </article>
+          <article class="card reveal" style="--delay: 0.12s">
+            <span class="step-num">02</span><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div>
+            <h3>Implementation</h3>
+            <p>At <strong><em>Neural Navigators</em></strong>, we specialize in implementing AI solutions that align with your business goals. From automating customer interactions with intelligent chatbots to using predictive analytics for sales and marketing optimization, our team develops and integrates AI models seamlessly into your existing systems. We guide you through the process, from data analysis and model development to testing and validation, ensuring that your AI solutions deliver real results.</p>
+          </article>
+          <article class="card reveal" style="--delay: 0.24s">
+            <span class="step-num">03</span><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m4.9 4.9 4.3 4.3M14.8 14.8l4.3 4.3M14.8 9.2l4.3-4.3M4.9 19.1l4.3-4.3"/></svg></div>
+            <h3>After Services Care</h3>
+            <p>At <strong><em>Neural Navigators</em></strong>, we understand that the journey doesn’t end with AI implementation. Our After Services Care includes ongoing support, regular maintenance, and proactive monitoring to ensure your AI systems continue to perform at their best. Whether you need updates, troubleshooting, or additional training, our team is here to provide on-demand support, so you can focus on leveraging AI for continued growth and innovation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="parallax"><img data-parallax="0.3" src="assets/img/hero-network.jpg" alt="" width="1600" height="900" loading="lazy"></div>
+      <div class="container">
+        <blockquote class="reveal">Our mission is simple: to make AI <span class="gradient-text gradient-text--light">accessible and practical</span> for businesses of all sizes, and to guide our clients through the rapidly evolving world of AI with clarity and purpose.</blockquote>
+      </div>
+    </section>
+
+    <!-- AI in your business -->
+    <section class="section section--blue on-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Why it matters</p>
+          <h2 class="section-title">AI In Your Business</h2>
+        </div>
+        <div class="accordion">
+          <details class="reveal">
+            <summary>What Can AI Do?</summary>
+            <p>Artificial Intelligence (AI) has the power to revolutionize the way businesses operate by automating routine tasks, predicting future trends, and personalizing customer interactions. From streamlining workflows and enhancing decision-making to uncovering insights hidden in data, AI helps businesses work smarter, reduce costs, and deliver exceptional customer experiences.</p>
+          </details>
+          <details class="reveal" style="--delay: .1s">
+            <summary>What We Offer</summary>
+            <p>At Neural Navigators, we specialize in leveraging AI to automate customer support, optimize sales with predictive analytics, and enhance marketing through intelligent automation. Our tailored solutions help businesses streamline operations, boost efficiency, and drive growth.</p>
+          </details>
+          <details class="reveal" style="--delay: .2s">
+            <summary>Why Now?</summary>
+            <p>In today’s fast-evolving digital landscape, businesses that embrace AI have a significant edge over the competition. AI is no longer a luxury; it’s a necessity for automating repetitive tasks, predicting market trends, and delivering personalized customer experiences. By integrating AI now, you can stay ahead of industry changes, drive efficiency, and unlock new growth opportunities before your competitors catch up.</p>
+          </details>
+        </div>
+        <p class="center reveal"><a class="btn btn--white" href="#services">See our services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="band band--services" id="services">
+      <div class="parallax"><img data-parallax="0.3" src="assets/img/services-hero.jpg" alt="" width="1600" height="1000" loading="lazy"></div>
+      <div class="container on-dark">
+        <div class="section-head reveal" style="margin-bottom: 0">
+          <p class="eyebrow">What we do</p>
+          <h2 class="section-title">Services &amp; Features</h2>
+          <p class="section-lead">AI solutions across customer support, sales, marketing, and accounting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="container">
+        <div class="tabs reveal" role="tablist" aria-label="Service categories">
+          <button class="tab" role="tab" id="tab-customer-support" aria-controls="panel-customer-support" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg><span>Customer Support</span></button>
+          <button class="tab" role="tab" id="tab-sales" aria-controls="panel-sales" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><span>Sales</span></button>
+          <button class="tab" role="tab" id="tab-marketing" aria-controls="panel-marketing" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 8a5 5 0 0 1 0 8"/></svg><span>Marketing</span></button>
+          <button class="tab" role="tab" id="tab-accounting" aria-controls="panel-accounting" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg><span>Accounting</span></button>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-customer-support" aria-labelledby="tab-customer-support">
+          <h3 class="tab-panel-title">Customer Support</h3>
+          <div class="grid grid--2">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></svg></div>
+            <h3>AI-Powered Chatbots &amp; Voice Assistants</h3>
+            <p>Enhance your customer experience with <strong>AI-powered chatbots and voice assistants</strong>. Using advanced <strong>Natural Language Processing (NLP)</strong> and voice recognition, our tools:</p><ul><li>Respond instantly to customer inquiries.</li><li>Handle voice-based and text-based queries seamlessly.</li><li>Free up your team to focus on complex issues while improving customer satisfaction.</li></ul>
+          </article>
+<article class="card reveal" style="--delay: 0.10s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+            <h3>Email Automation</h3>
+            <p>Transform your email workflows with AI-driven automation tools:</p><ul><li><strong>Sentiment Analysis</strong>: Detect and analyze customer emotions in emails to prioritize urgent issues and improve satisfaction.</li><li><strong>Email Summarization</strong>: Automatically summarize long threads into concise takeaways for faster response times.</li><li><strong>Auto-response Generation</strong>: Draft and send personalized, context-aware replies, improving efficiency while maintaining a human touch.</li></ul>
+          </article>
+<article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3.5 3.5 0 0 0 0-7H9a3.5 3.5 0 0 1 0-7h6.5"/></svg></div>
+            <h3>Intelligent Ticket Routing</h3>
+            <p>Optimize your support operations with <strong>intelligent ticket routing</strong>. Our AI categorizes and directs support tickets to the right teams or agents, reducing response times and ensuring faster resolution.</p>
+          </article>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-sales" aria-labelledby="tab-sales">
+          <h3 class="tab-panel-title">Sales</h3>
+          <div class="grid grid--2">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+            <h3>Predictive Modeling</h3>
+            <p>Leverage advanced AI to predict outcomes, trends, and opportunities:</p><ul><li><strong>Data Collection and Pre-processing</strong>: Organize raw data from sales, CRM, and market sources for actionable insights.</li><li><strong>Forecasting Analysis</strong>: Predict future sales trends and demand with precision using machine learning models.</li><li><strong>Customer Segmentation and Churn Prediction</strong>:<ul><li>Group customers based on behavior, preferences, and purchasing patterns.</li><li>Identify at-risk customers to develop proactive retention strategies.</li></ul></li><li><strong>Lead Scoring</strong>: Prioritize leads based on their likelihood to convert, allowing your sales team to focus on high-value opportunities.</li></ul>
+          </article>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-marketing" aria-labelledby="tab-marketing">
+          <h3 class="tab-panel-title">Marketing</h3>
+          <div class="grid grid--2">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div>
+            <h3>Content Generation</h3>
+            <p>Empower your content strategy with AI-powered tools that generate high-quality, brand-aligned content:</p><ul><li>Automated blog posts, social media updates, and ad copy.</li><li>Ensures consistency in tone and messaging while saving you time.</li></ul>
+          </article>
+<article class="card reveal" style="--delay: 0.10s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></div>
+            <h3>Automated Email Campaigns</h3>
+            <p>Maximize your email marketing efficiency with AI that:</p><ul><li>Optimizes send times.</li><li>Personalizes content based on user behavior.</li><li>Leverages A/B testing to improve open and click-through rates.</li></ul>
+          </article>
+<article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg></div>
+            <h3>Social Media Management</h3>
+            <p>Enhance your online presence with AI-driven social media tools:</p><ul><li>Schedule posts at optimal times for better visibility.</li><li>Analyze engagement and refine strategies to reach your target audience.</li></ul>
+          </article>
+<article class="card reveal" style="--delay: 0.10s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+            <h3>Personalized Recommendations</h3>
+            <p>Deliver tailored product and content recommendations to increase engagement and conversions. Our AI analyzes user behavior to provide suggestions that resonate with individual preferences.</p>
+          </article>
+<article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+            <h3>Ad Spend Optimization</h3>
+            <p>Improve ROI with AI-powered <strong>ad spend optimization</strong>:</p><ul><li>Allocate budgets efficiently across platforms.</li><li>Utilize predictive algorithms to adjust ad campaigns in real-time, maximizing impact and minimizing waste.</li></ul>
+          </article>
+          </div>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-accounting" aria-labelledby="tab-accounting">
+          <h3 class="tab-panel-title">Accounting</h3>
+          <div class="grid grid--2">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7H5a2 2 0 0 1 0-4h13v4"/><path d="M3 5v14a2 2 0 0 0 2 2h15V7"/><path d="M16 14h.01"/></svg></div>
+            <h3>Expense Management</h3>
+            <p>Gain control over your finances with AI-driven <strong>Expense Management</strong> solutions:</p><ul><li><strong>Financial Forecasting</strong>: Accurately predict expenses and optimize budgeting.</li><li><strong>Expense Categorization</strong>: Automate sorting and organization of expenses, saving time and reducing errors.</li></ul>
+          </article>
+<article class="card reveal" style="--delay: 0.10s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg></div>
+            <h3>Payroll Automation</h3>
+            <p>Simplify payroll operations with <strong>AI-powered automation</strong>. Ensure accurate, timely payroll processing while minimizing administrative overhead and human error.</p>
+          </article>
+<article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Fraud Detection</h3>
+            <p>Protect your business finances with AI-driven <strong>fraud detection</strong> tools:</p><ul><li>Analyze transaction patterns and detect anomalies.</li><li>Proactively flag and prevent fraudulent activities, ensuring financial security and compliance.</li></ul>
+          </article>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section section--light">
       <div class="container">
-        <h2 class="section-title">Our Process</h2>
-        <div class="columns">
-          <div>
-            <h3>Consultation</h3>
-            <p>At <strong><em>Neural Navigators</em></strong>, our AI consulting services empower businesses to harness the full potential of artificial intelligence. We work with you to identify key opportunities where AI can transform your operations. Whether you're looking to automate customer support, enhance sales forecasting, or streamline marketing strategies, our experts provide tailored advice to ensure you get the most out of your AI investments.</p>
-          </div>
-          <div>
-            <h3>Implementation</h3>
-            <p>At <strong><em>Neural Navigators</em></strong>, we specialize in implementing AI solutions that align with your business goals. From automating customer interactions with intelligent chatbots to using predictive analytics for sales and marketing optimization, our team develops and integrates AI models seamlessly into your existing systems. We guide you through the process, from data analysis and model development to testing and validation, ensuring that your AI solutions deliver real results.</p>
-          </div>
-          <div>
-            <h3>After Services Care</h3>
-            <p>At <strong><em>Neural Navigators</em></strong>, we understand that the journey doesn’t end with AI implementation. Our After Services Care includes ongoing support, regular maintenance, and proactive monitoring to ensure your AI systems continue to perform at their best. Whether you need updates, troubleshooting, or additional training, our team is here to provide on-demand support, so you can focus on leveraging AI for continued growth and innovation.</p>
-          </div>
+        <div class="section-head reveal">
+          <p class="eyebrow">How we deliver</p>
+          <h2 class="section-title">Implementation Considerations</h2>
+        </div>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Data Privacy and Compliance</h3>
+            <p>We prioritize data privacy and ensure full compliance with regulations like GDPR and CCPA. Our best practices include data anonymization and obtaining explicit consent for data collection, safeguarding your customers' information, and building trust.</p>
+          </article>
+          <article class="card reveal" style="--delay: 0.12s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0z"/><path d="M12 17v5"/></svg></div>
+            <h3>Integration with Existing Systems</h3>
+            <p>Our AI solutions seamlessly integrate with your existing systems using APIs and middleware. We ensure data consistency across platforms for smooth operation and minimal disruption to your current workflows.</p>
+          </article>
+          <article class="card reveal" style="--delay: 0.24s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5M2 17l10 5 10-5"/></svg></div>
+            <h3>Scalability</h3>
+            <p>We design our AI services with scalability in mind. Utilizing cloud platforms like AWS, Azure, or Google Cloud, we provide solutions that grow with your business, featuring modular architecture for easy scaling and updates as your needs evolve.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section--blue">
-      <div class="container">
-        <h2 class="section-title">AI In Your Business</h2>
-        <div class="accordion">
-          <details>
-            <summary>What Can AI Do?</summary>
-            <p>Artificial Intelligence (AI) has the power to revolutionize the way businesses operate by automating routine tasks, predicting future trends, and personalizing customer interactions. From streamlining workflows and enhancing decision-making to uncovering insights hidden in data, AI helps businesses work smarter, reduce costs, and deliver exceptional customer experiences.</p>
-          </details>
-          <details>
-            <summary>What We Offer</summary>
-            <p>At Neural Navigators, we specialize in leveraging AI to automate customer support, optimize sales with predictive analytics, and enhance marketing through intelligent automation. Our tailored solutions help businesses streamline operations, boost efficiency, and drive growth.</p>
-          </details>
-          <details>
-            <summary>Why Now?</summary>
-            <p>In today’s fast-evolving digital landscape, businesses that embrace AI have a significant edge over the competition. AI is no longer a luxury; it’s a necessity for automating repetitive tasks, predicting market trends, and delivering personalized customer experiences. By integrating AI now, you can stay ahead of industry changes, drive efficiency, and unlock new growth opportunities before your competitors catch up.</p>
-          </details>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <p class="eyebrow reveal">Get in touch</p>
+          <h2 class="section-title section-title--left reveal">Contact Us</h2>
+          <p class="contact-intro reveal" style="--delay: .1s">We welcome inquiries about AI. Please reach out to our sales team if you have any questions or are interested in a consultation. You may also contact us if you have feedback or suggestions about services. If you require technical assistance, please contact our support team. You can expect a response within 12 business hours.</p>
+          <div class="info-list">
+            <div class="reveal" style="--delay: .1s"><div class="info-item"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><div><small>Sales</small><a href="mailto:sales@neuralnavigators.com">sales@neuralnavigators.com</a></div></div></div>
+            <div class="reveal" style="--delay: .15s"><div class="info-item"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-6h3zM3 19a2 2 0 0 0 2 2h1v-6H3z"/></svg></div><div><small>Support</small><a href="mailto:support@neuralnavigators.com">support@neuralnavigators.com</a></div></div></div>
+            <div class="reveal" style="--delay: .2s"><div class="info-item"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div><div><small>Phone</small><a href="tel:+12819287155">(281)-928-7155</a></div></div></div>
+            <div class="reveal" style="--delay: .25s"><div class="info-item"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><small>Office</small>1250 Wood Branch Park, Ste. 490, Houston, TX 77079</div></div></div>
+            <div class="reveal" style="--delay: .3s"><div class="info-item"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><small>Hours</small>Monday–Friday, 9am–6pm</div></div></div>
+          </div>
+          <div class="reveal"><div class="social social--blue">
+          <a href="https://instagram.com/neuralnavigators" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.linkedin.com/company/neural-navigators/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4.5" r="2.2"/><path d="M10 9h3.8v1.8c.6-1.1 2-2.1 4-2.1 3.3 0 4.2 2.1 4.2 5V21h-4v-6.3c0-1.5-.3-2.8-1.9-2.8-1.7 0-2.1 1.2-2.1 2.8V21h-4z"/></svg></a>
+        </div></div>
         </div>
-        <p class="center"><a class="btn btn--light-blue" href="services">Learn more</a></p>
+
+        <form class="contact-form card reveal" style="--delay: .15s" data-to="sales@neuralnavigators.com">
+          <h3>Send us a message</h3>
+          <div class="field-row">
+            <label class="field">Name <input name="name" autocomplete="name" required></label>
+            <label class="field">Email <input name="email" type="email" autocomplete="email" required></label>
+          </div>
+          <label class="field">Subject <input name="subject"></label>
+          <label class="field">Message <textarea name="message" rows="7" required></textarea></label>
+          <button class="btn btn--primary" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <img class="footer-logo" src="assets/img/logo.png" alt="Neural Navigators" width="900" height="319" loading="lazy">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div>
-          <p><strong>Hours</strong><br>Monday–Friday<br>9am–6pm</p>
+          <img class="footer-logo" src="assets/img/logo.png" alt="Neural Navigators" width="900" height="319" loading="lazy">
+          <p>Charting your path to AI success.</p>
+          <div class="social">
+          <a href="https://instagram.com/neuralnavigators" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.linkedin.com/company/neural-navigators/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4.5" r="2.2"/><path d="M10 9h3.8v1.8c.6-1.1 2-2.1 4-2.1 3.3 0 4.2 2.1 4.2 5V21h-4v-6.3c0-1.5-.3-2.8-1.9-2.8-1.7 0-2.1 1.2-2.1 2.8V21h-4z"/></svg></a>
+        </div>
         </div>
         <div>
+          <h3>Explore</h3>
+          <p><a href="#home">Home</a></p>
+          <p><a href="#about">About</a></p>
+          <p><a href="#services">Services</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="mailto:cschwarz@neuralnavigators.com">sales@neuralnavigators.com</a></p>
+          <p><a href="tel:+12819287155">(281)-928-7155</a></p>
+          <h3 class="footer-subhead">Hours</h3>
+          <p>Monday–Friday<br>9am–6pm</p>
+        </div>
+        <div>
+          <h3>Visit</h3>
           <iframe class="footer-map" title="Map to Neural Navigators" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             src="https://maps.google.com/maps?q=1250+Wood+Branch+Park+Dr+Ste+490,+Houston,+TX+77079&amp;z=13&amp;output=embed"></iframe>
-          <p>1250 Wood Branch Park, Ste. 490<br>Houston, TX 77079</p>
+          <p class="footer-address">1250 Wood Branch Park, Ste. 490<br>Houston, TX 77079</p>
         </div>
-        <div>
-          <p><strong>Contact</strong><br>
-            <a href="mailto:cschwarz@neuralnavigators.com">sales@neuralnavigators.com</a><br>
-            <a href="tel:+12819287155">(281)-928-7155</a></p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Neural Navigators</span>
+        <span>Houston, Texas</span>
       </div>
     </div>
   </footer>
